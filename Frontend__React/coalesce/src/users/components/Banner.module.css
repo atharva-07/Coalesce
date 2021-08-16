@@ -1,0 +1,11 @@
+.banner {
+  width: inherit;
+  height: 440px;
+}
+
+.banner > img {
+  height: inherit;
+  object-fit: cover;
+  display: block;
+  width: 100%;
+}

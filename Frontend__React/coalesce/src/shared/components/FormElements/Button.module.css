@@ -1,0 +1,20 @@
+.btn {
+  width: 100%;
+  padding: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 25px;
+  background: #1f5afc;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #234af7;
+}
+
+.disabled {
+  background: #5984fa;
+  cursor: not-allowed;
+}

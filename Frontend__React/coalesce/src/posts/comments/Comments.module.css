@@ -1,0 +1,109 @@
+.comments-wrapper {
+  margin-top: 1rem;
+}
+
+.new-comment {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 3.2rem;
+  margin-bottom: 1rem;
+}
+
+.new-comment > p {
+  font-family: inherit;
+  background: #2b2b2c;
+  border-radius: 25px;
+  color: #e9e0e0;
+  flex: auto;
+  font-size: 15px;
+  padding: 8px;
+  margin-right: 3rem;
+  cursor: pointer;
+}
+
+.new-comment > div:first-child {
+  margin-right: 10px;
+}
+
+.cmnt-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  background: #080808;
+  color: #dadde4;
+  margin: 10px 0;
+  padding: 4px;
+  padding-left: 8px;
+  border-top: 1px solid #2f3338;
+}
+
+.cmnt-wrapper > div:first-child {
+  flex-shrink: 0;
+  align-self: flex-start;
+  margin-right: 11px;
+  margin-top: 3px;
+}
+
+.cmnt-wrapper > footer {
+  margin-left: 10px;
+  flex-direction: row;
+}
+
+.header > div > span:first-child {
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.header > div > span:not(:first-child) {
+  font-size: 15px;
+  color: #6e767d;
+}
+
+.header > div > span:last-child {
+  font-size: 14px;
+}
+
+.main > main > p {
+  color: #cccccc;
+  font-size: 14.8px;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer > span {
+  padding: 4px;
+}
+
+.footer span {
+  margin-right: 8px;
+}
+
+.footer > span:first-child:hover {
+  color: #00ff15;
+  cursor: pointer;
+}
+
+.liked {
+  color: #96eb35;
+}
+
+.empty {
+  border-top: 1px solid #2f3338;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.empty > h3 {
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.empty > p {
+  color: #535353;
+}

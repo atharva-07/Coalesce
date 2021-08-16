@@ -1,0 +1,27 @@
+.subheader-wrapper li {
+  padding: 8px 0;
+}
+
+.mode-switch {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.mode-switch:hover {
+  color: #ffff00;
+}
+
+.create-post {
+  cursor: pointer;
+  width: 70%;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 22px;
+  background: #1667fd;
+  text-align: center;
+  font-weight: 600;
+}
+
+.create-post:hover {
+  background: #1654fd;
+}

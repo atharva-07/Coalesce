@@ -1,0 +1,92 @@
+.messages-wrapper {
+  background: transparent;
+  flex: 0 0 650px;
+  min-height: 100vh;
+  height: 100%;
+  border: 1px solid #2f3338;
+  position: relative;
+}
+
+.chat-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 85vh;
+  overflow: auto;
+}
+
+.nochat {
+  align-self: center;
+  text-align: center;
+  margin-top: 8rem;
+}
+
+.nochat > h2 {
+  font-weight: 600;
+  line-height: 4rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.nochat > p {
+  color: #928f8f;
+}
+
+.back {
+  padding: 14px 8px;
+  font-size: 17px;
+  border-bottom: 1px solid #2f3338;
+}
+
+.back > span {
+  margin-left: 4px;
+  font-weight: 800;
+}
+
+.back > span:first-child {
+  margin-right: 10px;
+  cursor: pointer;
+  color: #03db03;
+}
+
+.back > span:first-child:hover {
+  color: #00ff00;
+}
+
+.textbox {
+  position: absolute;
+  background: #000;
+  bottom: 1px;
+  width: 100%;
+  z-index: 10;
+  border-top: 1px solid #2f3338;
+}
+
+.textbox input {
+  width: 90%;
+  margin-left: 8px;
+}
+
+.send {
+  color: #1989e4;
+  transform: translateX(1rem);
+  cursor: pointer;
+}
+
+.msg-bubble {
+  font-size: 14px;
+  background: #2a5af8;
+  padding: 7px 10px;
+  border-radius: 1rem;
+  margin: 10px;
+  max-width: 350px;
+  word-wrap: break-word;
+}
+
+.own {
+  background: #3e4042;
+}
+
+.right {
+  align-self: flex-end;
+}

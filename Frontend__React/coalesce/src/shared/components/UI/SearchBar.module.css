@@ -1,0 +1,66 @@
+.wrapper {
+  position: relative;
+  top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  background: #1f1f20;
+  border-radius: 25px;
+  padding: 10px;
+  color: #6e767d;
+  opacity: 0.8;
+  border: 1px solid #2f3338;
+  z-index: 4;
+}
+
+.wrapper:focus-within {
+  background: #0e0d0d;
+  border-color: #008cff;
+  color: #008cff;
+}
+
+.search-bar {
+  background: transparent;
+  font-size: 14px;
+  font-weight: 100;
+  outline: none;
+  border: none;
+  color: #ccc;
+  width: 80%;
+}
+
+.autocomplete {
+  position: relative;
+  top: 1.2rem;
+  max-height: 380px;
+  overflow: auto;
+  box-shadow: 1px 1px 5px #444444, 1px 0 5px #444444;
+}
+
+.autocomplete > span {
+  width: 100%;
+  line-height: 4rem;
+  color: #686b6d;
+  margin-left: 3rem;
+}
+
+.autocomplete-card {
+  display: flex;
+  padding: 8px;
+  border: 1px solid #2f3338;
+  cursor: pointer;
+}
+
+.autocomplete-card > div:first-child {
+  margin-right: 1rem;
+}
+
+.name {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.name > p:last-child {
+  color: #6e767d;
+  font-size: 14px;
+  font-weight: 400;
+}

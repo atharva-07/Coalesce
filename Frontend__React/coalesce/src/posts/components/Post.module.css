@@ -1,0 +1,95 @@
+.post-wrapper {
+  display: flex;
+  flex-direction: row;
+  background: #080808;
+  color: #dadde4;
+  border-top: 1px solid #2f3338;
+  padding: 8px;
+  padding-top: 0;
+}
+
+.post-wrapper > div:first-child {
+  flex-shrink: 0;
+  align-self: flex-start;
+  margin-top: 11px;
+}
+
+.post-wrapper > div:last-child {
+  padding: 8px 8px 0 8px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header > div > span:first-child {
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.header > div > span:not(:first-child) {
+  font-size: 15px;
+  color: #6e767d;
+}
+
+.header > div > span:last-child {
+  font-size: 14px;
+}
+
+.main {
+  width: 100%;
+  font-size: 15px;
+  margin-top: 2px;
+  color: #bbbbbb;
+  cursor: pointer;
+}
+
+.image-container {
+  margin-top: 10px;
+  width: 95%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.image-container > img {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+}
+
+.footer {
+  display: flex;
+  margin-top: 10px;
+  color: #b0b3b6;
+}
+
+.footer > div {
+  flex: 0 0 50%;
+  align-self: flex-end;
+  text-align: center;
+  cursor: pointer;
+}
+
+.footer > div:first-child:hover {
+  color: #fa3030;
+}
+
+.liked {
+  color: #fa3030;
+}
+
+.footer > div:last-child:hover {
+  color: #42a8fc;
+}
+
+.commented {
+  color: #42a8fc;
+}
+
+.footer span:last-child {
+  font-size: 15px;
+  margin-left: 6px;
+}

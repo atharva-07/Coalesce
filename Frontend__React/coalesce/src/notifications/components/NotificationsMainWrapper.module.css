@@ -1,0 +1,26 @@
+.ntf-wrapper {
+  background: transparent;
+  flex: 0 0 650px;
+  border: 1px solid #2f3338;
+}
+
+.back {
+  padding: 14px 8px;
+  font-size: 17px;
+  border-bottom: 1px solid #2f3338;
+}
+
+.back > span {
+  margin-left: 4px;
+  font-weight: 800;
+}
+
+.back > span:first-child {
+  margin-right: 10px;
+  cursor: pointer;
+  color: #03db03;
+}
+
+.back > span:first-child:hover {
+  color: #00ff00;
+}

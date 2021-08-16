@@ -1,0 +1,21 @@
+.bar-wrapper {
+  display: flex;
+  padding: 13px;
+  justify-content: space-between;
+}
+
+.bar-wrapper > span {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.bar-wrapper > span:last-child {
+  font-weight: 600;
+  color: rgb(96, 170, 240);
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.bar-wrapper > span:last-child:hover {
+  color: rgb(8, 130, 230);
+}

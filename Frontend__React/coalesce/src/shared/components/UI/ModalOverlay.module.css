@@ -1,0 +1,35 @@
+.modal {
+  position: fixed;
+  top: 28vh;
+  left: 30%;
+  background: #000000;
+  width: 40%;
+  z-index: 100;
+  padding: 1rem;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.modal > * {
+  margin-bottom: 1rem;
+}
+
+.header {
+  color: rgb(233, 99, 99);
+}
+
+.content {
+  margin: 1rem 0;
+}
+
+.actions {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.actions > button {
+  background: #111111;
+  border: 2px solid #234af7;
+  width: 10rem;
+}

@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 14rem;
+  padding: 1rem;
+  margin: 3px 0;
+  border: 1px solid rgba(63, 63, 64, 0.5);
+  border-radius: 4px;
+  word-wrap: break-word;
+}
+
+.wrapper > div:first-child {
+  margin-bottom: 6px;
+}
+
+.info-box {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-box > * {
+  margin: 2px;
+}
+
+.info-box > p {
+  font-size: 15px;
+  color: #7c8288;
+}

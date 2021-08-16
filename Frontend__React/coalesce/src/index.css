@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: #e4e6eb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #080808;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #ffffff;
+}
+
+a:visited {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #1da1f2;
+}
+
+a:active {
+  color: #1da1f2;
+}
+
+.material-icons-outlined {
+  vertical-align: middle;
+  transform: translateY(-2px);
+}
+
+.icon {
+  font-size: 21px;
+}
+
+.welcome-wrapper {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  width: 70%;
+  margin-top: 30vh;
+  align-items: center;
+}
+
+.message {
+  padding-right: 8rem;
+  border-right: 1px solid #ccc;
+  align-self: stretch;
+}
+
+.message > * {
+  margin: 8px 0;
+}
+
+.message > h1 {
+  display: inline-block;
+  border-bottom: 4px solid #ff9100;
+}
+
+.message > p {
+  font-size: 18px;
+}
+
+.links > a {
+  text-align: center;
+  font-weight: bold;
+  background: #235bf7;
+  border-radius: 25px;
+  margin: 1rem 0;
+  padding: 1rem;
+  display: block;
+  width: 18rem;
+}
+
+.links > a:hover {
+  color: #ffffff;
+}
+
+.links > a:last-child {
+  color: #e4e1e1;
+  background: transparent;
+  border: 2px solid #3a6dfa;
+}
+
+.auth-wrapper {
+  width: 24rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.auth-wrapper > * {
+  margin: 1rem 0;
+}
+
+.err-msg {
+  font-size: 14px;
+  color: rgb(255, 109, 109);
+}
+
+form > * {
+  margin: 1rem 0;
+}
+
+form input {
+  width: 100%;
+  margin: 0 auto;
+  background: transparent;
+  border: 1px solid #2075f5;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+form > .half {
+  width: 10rem;
+}
+
+.form-gender {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #2075f5;
+  border-radius: 4px;
+  padding: 5px 8px;
+  font-weight: 400;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #8a8989;
+}
+
+.form-gender > div {
+  color: #b8b8b8;
+  border: 1px solid #2f3338;
+  border-radius: 2px 4px;
+  padding: 5px;
+}
+
+.form-gender > div > * {
+  width: unset;
+  margin: 0 4px;
+  display: inline;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #979696;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5f5d5d;
+}
+
+.center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-upload--fp {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid rgb(71, 71, 70);
+  padding: 4px;
+  border-radius: 16px;
+}
+
+.image-upload--fp > span:first-child {
+  cursor: pointer;
+}
+
+.image-upload--fp > span:first-child:hover {
+  color: #eeff00;
+}
+
+.tick {
+  color: #3cff00;
+}
+
+.boldify {
+  color: #e6e1e1;
+  font-weight: bold;
+}

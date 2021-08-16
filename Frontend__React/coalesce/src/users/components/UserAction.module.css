@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  border: 1px solid #000000;
+  padding: 10px 0;
+}
+
+.wrapper:hover {
+  border-color: #888888;
+}
+
+.wrapper div > span {
+  color: #6e767d;
+}
+
+.wrapper div > span:first-child {
+  color: #f1ebeb;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.wrapper > span {
+  cursor: pointer;
+  align-self: center;
+}
+
+.wrapper > span:hover {
+  color: #ff0000;
+}

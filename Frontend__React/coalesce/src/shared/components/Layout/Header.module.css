@@ -1,0 +1,11 @@
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  left: calc((100vw - 1300px) / 2);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100%;
+  width: 270px;
+  z-index: 4;
+}

@@ -14,6 +14,7 @@ import { useHttp } from '../../shared/hooks/use-http';
 import Logo from '../../shared/components/UI/Logo';
 
 const Login = () => {
+  document.title = 'Coalesce | Log In';
   const auth = useContext(AuthContext);
   const { isLoading, error, sendRequest, clearError } = useHttp();
 

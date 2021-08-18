@@ -15,6 +15,7 @@ import { useHistory } from 'react-router-dom';
 import Logo from '../../shared/components/UI/Logo';
 
 const SignUp = () => {
+  document.title = 'Coalesce | Sign Up';
   const { isLoading, error, sendRequest, clearError } = useHttp();
   const history = useHistory();
 

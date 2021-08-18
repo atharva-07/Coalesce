@@ -13,12 +13,17 @@ export const useHttp = () => {
       activeHttpRequests.current.push(httpAbortCtrl);
 
       try {
-        const response = await fetch('http://localhost:7110/coalesce', {
-          method,
-          body,
-          headers,
-          signal: httpAbortCtrl.signal
-        });
+        const response = await fetch(
+          `http://localhost:${
+            process.env.REACT_APP_BACKEND_PORT || 4000
+          }/coalesce`,
+          {
+            method,
+            body,
+            headers,
+            signal: httpAbortCtrl.signal
+          }
+        );
 
         const responseData = await response.json();
 

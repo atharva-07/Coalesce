@@ -6,5 +6,7 @@
 /Backend__Node-GraphQL/coalesce/nodemon.json
 /Frontend__React/coalesce/node_modules
 /Frontend__React/coalesce/screenshots
+/Frontend__React/coalesce/.env
 /WebSocket__Socket.io/coalesce/node_modules
-
+/WebSocket__Socket.io/coalesce/.env
+/WebSocket__Socket.io/coalesce/nodemon.json

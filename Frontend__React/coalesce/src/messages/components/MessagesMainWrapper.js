@@ -13,7 +13,9 @@ const MessagesMainWrapper = (props) => {
 
   useEffect(() => {
     document.title = 'Coalesce | Messages';
-    socket.current = io('ws://localhost:8080');
+    socket.current = io(
+      `ws://localhost:${process.env.REACT_APP_SOCKET_PORT || 5000}`
+    );
   }, []);
 
   useEffect(() => {

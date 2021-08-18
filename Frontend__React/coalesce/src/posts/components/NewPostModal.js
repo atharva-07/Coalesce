@@ -30,13 +30,18 @@ const NewPostOverlay = (props) => {
       const formData = new FormData();
       formData.append('content', content);
       formData.append('image', image);
-      const response = await fetch('http://localhost:7110/post-image', {
-        method: 'PUT',
-        headers: {
-          Authorization: 'Bearer ' + auth.token
-        },
-        body: formData
-      });
+      const response = await fetch(
+        `http://localhost:${
+          process.env.REACT_APP_BACKEND_PORT || 4000
+        }/post-image`,
+        {
+          method: 'PUT',
+          headers: {
+            Authorization: 'Bearer ' + auth.token
+          },
+          body: formData
+        }
+      );
       const responseData = await response.json();
       const graphqlQuery = {
         query: `

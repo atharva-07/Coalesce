@@ -71,7 +71,9 @@ const Post = (props) => {
           {props.image && (
             <div className={classes['image-container']}>
               <img
-                src={`http://localhost:7110/${props.image}`}
+                src={`http://localhost:${
+                  process.env.REACT_APP_BACKEND_PORT || 4000
+                }/${props.image}`}
                 alt="post_image"
               />
             </div>

@@ -7,8 +7,12 @@ const Banner = (props) => {
       <img
         src={
           !props.src || props.src === ' '
-            ? 'http://localhost:7110/images/banner/default.png'
-            : `http://localhost:7110/${props.src}`
+            ? `http://localhost:${
+                process.env.REACT_APP_BACKEND_PORT || 4000
+              }/images/banner/default.png`
+            : `http://localhost:${process.env.REACT_APP_BACKEND_PORT || 4000}/${
+                props.src
+              }`
         }
         alt={props.user + 'cover'}
       ></img>

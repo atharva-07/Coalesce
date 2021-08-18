@@ -57,7 +57,6 @@ module.exports = {
           gender: userData.gender
         });
         const result = await user.save();
-        console.log(result);
         return {
           ...result._doc,
           password: "Can't retrieve password from the database",

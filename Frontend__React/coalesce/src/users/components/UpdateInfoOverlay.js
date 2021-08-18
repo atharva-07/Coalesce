@@ -21,13 +21,18 @@ const UpdateInfoOverlay = (props) => {
       formData.append('bio', bio);
       formData.append('pfp', pfp);
       formData.append('banner', banner);
-      const response = await fetch('http://localhost:7110/profile-images', {
-        method: 'PUT',
-        headers: {
-          Authorization: 'Bearer ' + auth.token
-        },
-        body: formData
-      });
+      const response = await fetch(
+        `http://localhost:${
+          process.env.REACT_APP_BACKEND_PORT || 4000
+        }/profile-images`,
+        {
+          method: 'PUT',
+          headers: {
+            Authorization: 'Bearer ' + auth.token
+          },
+          body: formData
+        }
+      );
       const responseData = await response.json();
       const graphqlQuery = {
         query: `

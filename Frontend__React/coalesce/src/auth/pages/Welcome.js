@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Welcome = () => {
+  document.title = 'Coalesce | Welcome';
+
   return (
     <div className="welcome-wrapper">
       <div className="message">

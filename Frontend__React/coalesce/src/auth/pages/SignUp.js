@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import {
   VALIDATOR_REQUIRE,
@@ -15,7 +15,9 @@ import { useHistory } from 'react-router-dom';
 import Logo from '../../shared/components/UI/Logo';
 
 const SignUp = () => {
-  document.title = 'Coalesce | Sign Up';
+  useEffect(() => {
+    document.title = 'Coalesce | Sign Up';
+  }, []);
   const { isLoading, error, sendRequest, clearError } = useHttp();
   const history = useHistory();
 

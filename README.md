@@ -34,7 +34,7 @@ A Full Stack (MERN) Social Media Web App to connect with your friends.
 ![User's Profile](https://i.imgur.com/ETuLzMT.png)\
 **Search Results**\
 ![Search Results](https://i.imgur.com/4MlDFXd.png)\
-**Creaing New Post**
+**Creating New Post**
 ![Creating New Post](https://i.imgur.com/8cQ5hH4.png)\
 **Updating User's Information**
 ![Updating User's Information](https://i.imgur.com/ln0zS30.png)\

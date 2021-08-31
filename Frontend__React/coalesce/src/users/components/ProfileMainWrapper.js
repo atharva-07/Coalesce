@@ -86,6 +86,7 @@ const ProfileMainWrapper = () => {
         fullname: responseData.data.getUserProfile.fullname,
         username: responseData.data.getUserProfile.username,
         bio: responseData.data.getUserProfile.bio,
+        gender: responseData.data.getUserProfile.gender,
         pfp: responseData.data.getUserProfile.pfp,
         cover: responseData.data.getUserProfile.cover,
         followers: responseData.data.getUserProfile.followers.length,
@@ -215,6 +216,8 @@ const ProfileMainWrapper = () => {
     openModal(false);
   };
 
+  console.log(userData);
+
   return (
     <div className={classes['profile-wrapper']}>
       {modal && (
@@ -235,9 +238,11 @@ const ProfileMainWrapper = () => {
             <i>{userData.bio}</i>
           </p>
         </div>
-        <span className="material-icons-outlined" onClick={modalOpener}>
-          edit
-        </span>
+        {auth.username === username && (
+          <span className="material-icons-outlined" onClick={modalOpener}>
+            edit
+          </span>
+        )}
       </div>
       <div className={classes['content-wrapper']}>
         <div className={classes.content}>
@@ -294,9 +299,15 @@ const ProfileMainWrapper = () => {
             <div>
               <span>Gender</span>
               {userData.gender === 'male' ? (
-                <span className="material-icons-outlined">male</span>
+                <div>
+                  <span className="material-icons-outlined">male</span>
+                  <span>- M</span>
+                </div>
               ) : (
-                <span className="material-icons-outlined">female</span>
+                <div>
+                  <span className="material-icons-outlined">female</span>
+                  <span>- F</span>
+                </div>
               )}
             </div>
           </div>

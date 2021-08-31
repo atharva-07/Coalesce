@@ -65,7 +65,9 @@ module.exports = {
       return [];
     }
     try {
-      const result = await User.find({ fullname: { $regex: searchField } });
+      const result = await User.find({
+        fullname: { $regex: searchField, $options: 'i' }
+      });
       return result;
     } catch (err) {
       console.log(err);

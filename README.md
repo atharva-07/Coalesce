@@ -23,7 +23,7 @@ A Full Stack (MERN) Social Media Web App to connect with your friends.
 **Sign Up**
 ![Sign Up Page](https://i.imgur.com/fzlOgzk.png)\
 **Home Page (Feed)**
-![Home Page (Feed)](https://i.imgur.com/fzlOgzk.png)\
+![Home Page (Feed)](https://imgur.com/qbFsWmp.png)\
 **Single Post (with Comments)**
 ![Single Post (with Comments)](https://i.imgur.com/GAQEQlk.png)\
 **Notifications**

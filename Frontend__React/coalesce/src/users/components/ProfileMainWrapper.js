@@ -216,8 +216,6 @@ const ProfileMainWrapper = () => {
     openModal(false);
   };
 
-  console.log(userData);
-
   return (
     <div className={classes['profile-wrapper']}>
       {modal && (

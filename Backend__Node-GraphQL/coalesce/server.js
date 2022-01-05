@@ -5,7 +5,7 @@ const path = require('path');
 mongoose.set('useFindAndModify', false);
 
 const MONGODB_URI = `
-  mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_USER_PW}@dummystorecluster.8o8sy.mongodb.net/${process.env.MONGO_DB}?retryWrites=true
+  mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_USER_PW}@${process.env.MONGO_CLUSTER}/${process.env.MONGO_DB}?retryWrites=true
 `;
 
 const graphQlSchema = require('./schema/index');
@@ -55,7 +55,6 @@ app.put(
       pfpPath: undefined,
       bannerPath: undefined
     };
-    console.log(req.files);
     if (req.files['pfp']) {
       paths = { ...paths, pfpPath: req.files['pfp'][0].path };
     }
